@@ -1,5 +1,5 @@
 # Multi-Agent Reinforcement Learning in Graphs
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Lint](https://github.com/jw3il/graph-marl/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/jw3il/graph-marl/actions/workflows/lint.yml) [![Train Example](https://github.com/jw3il/graph-marl/actions/workflows/train-example.yml/badge.svg?branch=main)](https://github.com/jw3il/graph-marl/actions/workflows/train-example.yml) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) 
 
 This repository provides prototypical implementations of reinforcement learning algorithms and graph-based (multi-agent) environments.
 
