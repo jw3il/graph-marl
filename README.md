@@ -145,7 +145,7 @@ When opening the project with vscode, you should get a prompt to install the rec
 ### Select Python Interpreter
 
 To get syntax highlighting to work properly, you have to select the correct Python interpreter.
-This can be done by opening the vscode command palette (usually Control+Shift+P or F1) and typing `Python: Select Interpreter`. Select the previously created `ac3net` conda environment and you are done.
+This can be done by opening the vscode command palette (usually Control+Shift+P or F1) and typing `Python: Select Interpreter`. Select the previously created `graph-marl` conda environment and you are done.
 
 ### Viewing Tensorboard Logs
 
