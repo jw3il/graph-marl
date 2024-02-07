@@ -1,0 +1,37 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Autonomous Communication in Cooperative Computer Networks
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file. If you use it in your research,
+  please cite the listed conference paper.
+type: software
+authors:
+  - given-names: Jannis
+    family-names: Weil
+  - given-names: Zhenghua
+    family-names: Bao
+  - given-names: Amirkasra
+    family-names: Amini
+license: MIT
+preferred-citation:
+    type: conference-paper
+    title: >-
+      Towards Generalizability of Multi-Agent Reinforcement 
+      Learning in Graphs with Recurrent Message Passing
+    authors:
+      - family-names: Weil
+        given-names: Jannis
+      - family-names: Bao
+        given-names: Zhenghua
+      - family-names: Abboud
+        given-names: Osama
+      - family-names: Meuser
+        given-names: Tobias
+    collection-title: >-
+      Proceedings of the 23rd International Conference on 
+      Autonomous Agents and Multiagent Systems
+    notes: accepted, to appear
+    year: 2024

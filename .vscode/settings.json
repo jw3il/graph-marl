@@ -1,0 +1,14 @@
+{
+    "autoDocstring.docstringFormat": "sphinx-notypes",
+    "editor.detectIndentation": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+    },
+    "python.analysis.typeCheckingMode": "off",
+    "editor.rulers": [
+        90
+    ],
+    "editor.defaultFormatter": "ms-python.black-formatter"
+}
