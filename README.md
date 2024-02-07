@@ -157,6 +157,6 @@ Alternatively, you can run the command `Python: Launch Tensorboard` in vscode.
 
 ## Acknowledgement
 
-This work has received funding from the Federal Ministry of Education and Research of Germany ([BMBF](https://www.bmbf.de/)) through Software Campus Grant 01IS17050 (AC3Net).
+This work has received funding from the Federal Ministry of Education and Research of Germany ([BMBF](https://www.bmbf.de/)) through Software Campus Grant 01IS17050 ([AC3Net](https://softwarecampus.de/en/projekt/ac3net-autonomous-communication-in-cooperative-computer-networks/)).
 
-Repository logo by Alisha Hirsch.
+AC3Net project logo by Alisha Hirsch.
