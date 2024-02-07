@@ -1,0 +1,22 @@
+name: Lint
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**.py'
+  pull_request:
+    paths:
+      - '**.py'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+      - name: Install flake8 and black
+        run: pip install flake8==6.0.0 black==22.12.0 flake8-black
+      - run: flake8 .

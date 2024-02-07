@@ -1,0 +1,27 @@
+name: Train Example
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**.py'
+  pull_request:
+    paths:
+      - '**.py'
+
+jobs:
+  train-example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -e .
+      - name: Train agent and check result
+        run: |
+          python src/main.py --model=dqn --hidden-dim=8 --random-topology=1 --mini-batch-size=32 --device=cpu --episode-steps=1 --eval-episode-steps=1 --lr=0.001 --tau=0.01 --netmon --netmon-encoder-dim=4 --hidden-dim=4 --netmon-dim=2 --netmon-iterations=1 --sequence-length=1 --step-before-train=1_000 --capacity=10_000 --eval-episodes=100 --total-steps=5_000 --env-type=simple --epsilon=0.1 --epsilon-decay=1.0 --seed=0 --disable-progress | tee -a train.txt
+          cat train.txt | grep "\"reward_mean\": 1.0"
