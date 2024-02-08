@@ -1,5 +1,6 @@
 # Multi-Agent Reinforcement Learning in Graphs
-[![Lint](https://github.com/jw3il/graph-marl/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/jw3il/graph-marl/actions/workflows/lint.yml) [![Train Example](https://github.com/jw3il/graph-marl/actions/workflows/train-example.yml/badge.svg?branch=main)](https://github.com/jw3il/graph-marl/actions/workflows/train-example.yml) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) 
+[![Lint](https://github.com/jw3il/graph-marl/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/jw3il/graph-marl/actions/workflows/lint.yml) [![Train Example](https://github.com/jw3il/graph-marl/actions/workflows/train-example.yml/badge.svg?branch=main)](https://github.com/jw3il/graph-marl/actions/workflows/train-example.yml) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![arXiv](https://img.shields.io/badge/arXiv-2402.05027-b31b1b.svg)](https://arxiv.org/abs/2402.05027)
+ 
 
 This repository provides prototypical implementations of reinforcement learning algorithms and graph-based (multi-agent) environments.
 
@@ -10,7 +11,7 @@ The core idea is that this allows to *decouple* learning graph representations a
 
 ## Citation 
 
-This is the official implementation used in the paper *Towards Generalizability of Multi-Agent Reinforcement Learning in Graphs with Recurrent Message Passing*, which has been accepted for publication at AAMAS 2024. If you use parts of this repository, please consider citing
+This is the official implementation used in the paper *Towards Generalizability of Multi-Agent Reinforcement Learning in Graphs with Recurrent Message Passing* ([arXiv](https://arxiv.org/abs/2402.05027)), which has been accepted for publication at AAMAS 2024. If you use parts of this repository, please consider citing
 
 ```
 @InProceedings{weil2024graphMARL,
