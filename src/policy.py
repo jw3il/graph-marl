@@ -43,7 +43,7 @@ class EpsilonGreedy:
                 q_values[self._env.action_mask.nonzero()] = float("-inf")
 
         # epsilon-greedy action selection
-        random_actions = np.random.randint(self._action_space)
+        random_actions = np.random.randint(self._action_space, size=actions.shape[0])
         random_filter = np.random.rand(actions.shape[0]) < self._epsilon
         actions = (
             np.argmax(q_values, axis=-1) * ~random_filter
