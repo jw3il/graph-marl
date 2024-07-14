@@ -554,6 +554,8 @@ with_classification = False
 with_regression = False
 with_regression_all = True
 
+export_complevel = 9
+
 sequence_length = args.sequence_length
 
 save_results_filename = args.filename
@@ -681,7 +683,7 @@ if save_results_filename is not None:
             "Total Loss",
         ],
     )
-    df_loss.to_hdf(save_results_filename, "loss", mode="a")
+    df_loss.to_hdf(save_results_filename, "loss", mode="a", complevel=export_complevel)
 
     def validation_results_idx(idx):
         return list(map(lambda x: x[idx], validation_results))
@@ -704,7 +706,9 @@ if save_results_filename is not None:
             "Regression Loss All",
         ],
     )
-    df_validation.to_hdf(save_results_filename, "validation", mode="a")
+    df_validation.to_hdf(
+        save_results_filename, "validation", mode="a", complevel=export_complevel
+    )
 
 
 print("Train data eval: ")
@@ -784,4 +788,6 @@ if save_results_filename is not None:
             "Regression Loss All",
         ],
     )
-    df_loss.to_hdf(save_results_filename, "results", mode="a")
+    df_loss.to_hdf(
+        save_results_filename, "results", mode="a", complevel=export_complevel
+    )
