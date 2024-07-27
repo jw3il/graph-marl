@@ -268,6 +268,10 @@ def create_routing_plots(
                 output_dir / f"ep_{episode_i}_packet_heatmap.png",
             )
 
+        d["G"][episode_i] = episode.aux["G"]
+        d["sum_packets_per_node"][episode_i] = episode.aux["sum_packets_per_node"]
+        d["sum_packets_per_edge"][episode_i] = episode.aux["sum_packets_per_edge"]
+
         for k, v in episode.aux["distance_map"].items():
             d["distance_map"][k] += v
 
@@ -460,6 +464,9 @@ def create_routing_plots(
                     "reward",
                     "dropped",
                     "episode_done_agents",
+                    "G",
+                    "sum_packets_per_node",
+                    "sum_packets_per_edge",
                 ]
             },
             f,
